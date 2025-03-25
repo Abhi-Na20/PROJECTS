@@ -1,52 +1,104 @@
-.button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-  .dropdown_button {
-    background-color: #ad0909;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    width: 200px;
-    font-family: montserrat;
-    border: 1px solid #ffffff;
-    margin: 10px;
-  }
-
-  .button-container .dropdown_button:last-child {
-    margin-left: auto;
-  }
-
-  .courses {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-
-  .courses li {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    list-style: none;
-    background-color: rgb(47, 47, 47);
-    font-family: montserrat;
-    border: 1px solid white;
-  }
-
-  .courses li a {
-    text-decoration: none;
-    color: white;
-    display: block;
+header {
+    background: #333;
+    color: #fff;
     padding: 10px;
-  }
+    text-align: center;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li:hover {
+    background: #444;
+}
+
+nav ul .dropdown {
+    display: none; 
+    position: absolute; 
+    background: #333;
+    padding: 0;
+}
+
+nav ul li:hover .dropdown {
+    display: block; 
+}
+
+nav ul .dropdown li {
+    display: block; 
+}
+
+nav ul .dropdown .sub-dropdown {
+    display: none; 
+    position: absolute; 
+    left: 100%; 
+    top: 0; 
+    background: #333;
+}
+
+nav ul .dropdown li:hover .sub-dropdown {
+    display: block; 
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
+
+
+#staticImage {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    max-width: 100px; 
+}
