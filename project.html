@@ -1,42 +1,36 @@
 <html>
-    <head>
-        <title>Car service</title>
-    </head>
     <body>
-        <div class="main">
-            <div class="dropdown_list">
-                <button class="dropdown_button" 
-                    onclick="toggleList()">
-                    Car Rental
-                </button>
-    
-                <div id="courses_container" class="courses"><br>
-                    <li><a href="">Sedan Cars</a></li>
-                    <li><a href="">SUV Cars</a></li>
-                    <li><a href="">Sports Car</a></li>
-                    <li><a href="">Mini van</a></li>
-                    <li><a href="">Convertible</a></li>
-                </div>
-            </div>
-        </div><br>
-        <div class="main">
-            <div class="dropdown_list">
-                <button class="dropdown_button" 
-                    onclick="toggleList()"><br>
-                    Car Purchase
-                </button>
-    
-                <div id="courses_container" class="courses">
-                    <li><a href="">Sedan Cars</a></li>
-                    <li><a href="">SUV Cars</a></li>
-                    <li><a href="">Sports Car</a></li>
-                    <li><a href="">Mini van</a></li>
-                    <li><a href="">Convertible</a></li>
-                </div>
-            </div>
+        <div class="button-container">
+            <button class="dropdown_button" onclick="toggleList()">
+                Car Rental
+            </button>
+            <button class="dropdown_button" onclick="toggleList()">
+                Car Purchase
+      </button>
+    </div>
+    <div class="main">
+      <div class="dropdown_list">
+        <div id="courses_container" class="courses"><br>
+          <li><a href="">Sedan Cars</a></li>
+          <li><a href="">SUV Cars</a></li>
+          <li><a href="">Sports Car</a></li>
+          <li><a href="">Mini van</a></li>
+          <li><a href="">Convertible</a></li>
         </div>
-        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-        <script src="project.js"></script>
-        <link rel="stylesheet" href="project.css">
-    </body>
+      </div>
+    </div>
+    <div class="main">
+      <div class="dropdown_list">
+        <div id="courses_container" class="courses">
+          <li><a href="">Sedan Cars</a></li>
+          <li><a href="">SUV Cars</a></li>
+          <li><a href="">Sports Car</a></li>
+          <li><a href="">Mini van</a></li>
+          <li><a href="">Convertible</a></li>
+        </div>
+      </div>
+    </div>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <script src="project.js"></script>
+  </body>
 </html>
