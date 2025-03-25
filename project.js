@@ -1,19 +1,9 @@
-function toggleList() {
-    // Access the List
-  const courses = document.getElementById("courses_container");
-  
-    // Check the visibility
-  if (courses.style.display == "block") {
-      courses.style.display = "none"; // Hide the list
-  } else {
-      courses.style.display = "block"; // Display the list
-  }
-}
+document.getElementById('contactBtn').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default anchor behavior
+    alert('Contact us at: ulstermotors@gmail.com');
+});
 
-// Hide the list on click outside the dropdown list
-window.onclick = function (event) {
-  if (!event.target.matches('.dropdown_button')) {
-      document.getElementById('courses_container')
-          .style.display = "none";
-  }
-} 
+
+document.getElementById('learnMoreBtn').addEventListener('click', function() {
+    alert('Thank you for your interest! More information will be available soon.');
+});
