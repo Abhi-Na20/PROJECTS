@@ -1,0 +1,39 @@
+.dropdown_button {
+    background-color: #ad0909;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    font-family: montserrat;
+    border: 1px solid #ffffff;
+}
+
+.courses {
+    display: none; /* Initially Hide the Dropdown List*/
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.courses li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    list-style: none;
+    background-color: rgb(47, 47, 47);
+    font-family: montserrat;
+    border: 1px solid white;
+}
+
+.courses li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
