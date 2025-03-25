@@ -1,38 +1,85 @@
 <html>
-  <body>
-    <img src="698869 (1).png" width="100%" height="100%">
-    <div class="button-container">
-      <button class="dropdown_button" onclick="toggleList()">
-        Car Rental
-      </button>
-      <button class="dropdown_button" onclick="toggleList()">
-        Car Purchase
-      </button>
-    </div>
-    <div class="main">
-      <div class="dropdown_list">
-        <div id="courses_container" class="courses"><br>
-          <li><a href="">Sedan Cars</a></li>
-          <li><a href="">SUV Cars</a></li>
-          <li><a href="">Sports Car</a></li>
-          <li><a href="">Mini van</a></li>
-          <li><a href="">Convertible</a></li>
-        </div>
-      </div>
-    </div>
-    <div class="main">
-      <div class="dropdown_list">
-        <div id="courses_container" class="courses">
-          <li><a href="">Sedan Cars</a></li>
-          <li><a href="">SUV Cars</a></li>
-          <li><a href="">Sports Car</a></li>
-          <li><a href="">Mini van</a></li>
-          <li><a href="">Convertible</a></li>
-        </div>
-      </div>
-    </div>
-    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+<head>
+    <title>Simple Car Website</title>
     <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome To ulster Motors</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Car Rental</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#">Sedans</a>
+                            <ul class="sub-dropdown">
+                                <li><a href="#">Electric</a></li>
+                                <li><a href="#">Hybrid</a></li>
+                                <li><a href="#">Petrol</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">SUVs</a>
+                            <ul class="sub-dropdown">
+                                <li><a href="#">Electric</a></li>
+                                <li><a href="#">Hybrid</a></li>
+                                <li><a href="#">Petrol</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Trucks</a>
+                            <ul class="sub-dropdown">
+                                <li><a href="#">Electric</a></li>
+                                <li><a href="#">Hybrid</a></li>
+                                <li><a href="#">Petrol</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Car Purchase</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#">New Cars</a>
+                            <ul class="sub-dropdown">
+                                <li><a href="#">Electric</a></li>
+                                <li><a href="#">Hybrid</a></li>
+                                <li><a href="#">Petrol</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Used Cars</a>
+                            <ul class="sub-dropdown">
+                                <li><a href="#">Electric</a></li>
+                                <li><a href="#">Hybrid</a></li>
+                                <li><a href="#">Petrol</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Luxury Cars</a>
+                            <ul class="sub-dropdown">
+                                <li><a href="#">Electric</a></li>
+                                <li><a href="#">Hybrid</a></li>
+                                <li><a href="#">Petrol</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#" id="contactBtn">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img id="staticImage" src="698869 (1).png" alt="Uploaded Image">
+        <h2>About Our Cars</h2>
+        <p>We offer a wide range of cars to suit your needs. From sedans to SUVs, we have it all!</p>
+        <button id="learnMoreBtn">Learn More</button>
+        
+    </main>
+    <footer>
+        <p> © 2025 Ulster Motors | All rights reserved</p>
+    </footer>
     <script src="project.js"></script>
-  </body>
+</body>
 </html>
