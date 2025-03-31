@@ -44,12 +44,14 @@ fade {
 }
 
 nav {
-    margin: 10px 0;
+    background-color: #444;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -94,8 +96,46 @@ nav ul .dropdown .sub-dropdown {
 nav ul .dropdown li:hover .sub-dropdown {
     display: block; 
 }
+.dropdown {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
 
+        .dropdown li {
+            display: block;
+        }
 
+        .dropdown a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown a:hover {
+            background-color: #555;
+        }
+
+        .sub-dropdown {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: 0;
+            background-color: #444;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1em 2em;
+            display: block;
+        }
 
 section {
     background: #fff;
@@ -124,24 +164,6 @@ footer {
     color: #fff;
 }
 
-
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width 180px
-        }
-
-div.gallery:hover {
-	border: 1px solid #777
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-  color: #ffffff
-}
-    
 
 #staticImage {
     position: absolute; 
