@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4;	
+    heigt: 100%
 }
 
 header {
@@ -10,6 +11,36 @@ header {
     color: #fff;
     padding: 10px;
     text-align: center;
+}
+
+slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+active {
+  background-color: #717171;
+}
+
+
+fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 nav {
@@ -64,9 +95,7 @@ nav ul .dropdown li:hover .sub-dropdown {
     display: block; 
 }
 
-main {
-    padding: 20px;
-}
+
 
 section {
     background: #fff;
@@ -95,6 +124,24 @@ footer {
     color: #fff;
 }
 
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width 180px
+        }
+
+div.gallery:hover {
+	border: 1px solid #777
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: #ffffff
+}
+    
 
 #staticImage {
     position: absolute; 
