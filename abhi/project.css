@@ -86,7 +86,8 @@ nav ul .dropdown li {
 nav ul .dropdown .sub-dropdown {
     display: none; 
     position: absolute; 
-    left: 100%; 
+    left: 100%;
+	min-width: 160px
     top: 0; 
     background: #333;
 }
