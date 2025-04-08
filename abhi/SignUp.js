@@ -20,7 +20,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     }
     
  
-        });
+        
     } else {
         // Submit the form if no errors
         alert('Form submitted successfully!');

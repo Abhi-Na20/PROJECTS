@@ -1,29 +1,32 @@
-document.getElementById('contactBtn').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default anchor behavior
-    alert('Contact us at: ulstermotors@gmail.com');
-});
+document.addEventListener("DOMContentLoaded", function() {
+      let slideIndex = 0;
+      showSlides();
 
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
 
-document.getElementById('learnMoreBtn').addEventListener('click', function() {
-    alert('Thank you for your interest! More information will be available soon.');
-});
+        // Check if slides and dots are correctly selected
+        console.log(slides);
+        console.log(dots);
 
-let slideIndex = 0;
-showSlides();
+        if (slides.length > 0 && dots.length > 0) {
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
+          slideIndex++;
+          if (slideIndex > slides.length) { slideIndex = 1; }
+
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+
+          setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+      }
+    });

@@ -44,6 +44,7 @@ fade {
 }
 
 nav {
+    background-color: #444;
     margin: 10px 0;
 }
 
@@ -71,8 +72,11 @@ nav ul li:hover {
 nav ul .dropdown {
     display: none; 
     position: absolute; 
-    background: #333;
+    background-color: #444;
     padding: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
 nav ul li:hover .dropdown {
@@ -85,6 +89,8 @@ nav ul .dropdown li {
 
 nav ul .dropdown .sub-dropdown {
     display: none; 
+    min-width: 160px;
+    background-color: #444;
     position: absolute; 
     left: 100%; 
     top: 0; 
@@ -96,12 +102,11 @@ nav ul .dropdown li:hover .sub-dropdown {
 }
 
 
-
 section {
     background: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 button {
@@ -124,6 +129,24 @@ footer {
     color: #fff;
 }
 
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width 180px
+        }
+
+div.gallery:hover {
+	border: 1px solid #777
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: #ffffff
+}
+    
 
 #staticImage {
     position: absolute; 
