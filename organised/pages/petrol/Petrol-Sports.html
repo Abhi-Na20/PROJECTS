@@ -1,13 +1,12 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Simple Car Website</title>
+    <title>Petrol Sports Cars | Ulster Motors</title>
     <link rel="stylesheet" href="project.css">
 </head>
 <body>
     <header>
-        <h1>Welcome To Ulster Motors</h1>
-    </marquee>
-        </h2>
+        <h1>Petrol Sports Cars</h1>
         <nav>
             <ul>
                 <li>
@@ -32,9 +31,17 @@
                         <li>
                             <a href="#">Trucks</a>
                             <ul class="sub-dropdown">
-                                <li><a href="electirc-trucks.html">Electric</a></li>
+                                <li><a href="electric-trucks.html">Electric</a></li>
                                 <li><a href="Hybrid-trucks.html">Hybrid</a></li>
                                 <li><a href="Petrol-trucks.html">Petrol</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Sports</a>
+                            <ul class="sub-dropdown">
+                                <li><a href="electric-Sports.html">Electric</a></li>
+                                <li><a href="Hybrid-Sports.html">Hybrid</a></li>
+                                <li><a href="Petrol-Sports.html">Petrol</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -68,24 +75,58 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="#" id="contactBtn">Contact</a></li>
+                <li><a href="project.html" id="goBack">Go Back</a></li>
             </ul>
         </nav>
     </header>
-    <marquee direction="left" behavior="scroll" style="border: black 2px solid; margin-top: 10px; padding: 5px;">
-        Experience Excellence on Every Journey with Ulster Motors
-    </marquee>
+
     <main>
-        <a target="_blank" href="project.html">
-	        <img id="staticImage" src="698869 (1).png" alt="Uploaded Image">
-	    </a>
-        <h2>Petrol Electric</h2>
-        <p>We offer a wide range of cars to suit your needs. From sedans to SUVs, we have it all!</p>
-        <a href="project.html">Back to Home</a>
+        <div class="gallery-container">
+            <div class="gallery">
+                <a href="ChevroletCorvetteZ06.html">
+                    <img src="petrolsports1.jpg" width="600" height="400">
+                </a>
+                <div class="desc">2024 Chevrolet Corvette Z06 - $106,000</div>
+            </div>
+            <div class="gallery">
+                <a href="Porsche911Turbo.html">
+                    <img src="petrolsports2.jpg" width="600" height="400">
+                </a>
+                <div class="desc">2023 Porsche 911 Turbo - $160,000</div>
+            </div>
+            <div class="gallery">
+                <a href="BMWM4Competition.html">
+                    <img src="petrolsports3.jpg" width="600" height="400">
+                </a>
+                <div class="desc">2023 BMW M4 Competition - $75,000</div>
+            </div>
+            <div class="gallery">
+                <a href="FordMustangGT.html">
+                    <img src="petrolsports4.jpg" width="600" height="400">
+                </a>
+                <div class="desc">2024 Ford Mustang GT - $55,000</div>
+            </div>
+            <div class="gallery">
+                <a href="AstonMartinDBS.html">
+                    <img src="petrolsports5.jpg" width="600" height="400">
+                </a>
+                <div class="desc">2023 Aston Martin DBS - $316,000</div>
+            </div>
+            <div class="gallery">
+                <a href="NissanGT-R.html">
+                    <img src="petrolsports6.jpg" width="600" height="400">
+                </a>
+                <div class="desc">2023 Nissan GT-R - $115,000</div>
+            </div>
+        </div>
     </main>
+
+    <a href="project.html">
+        <img id="staticImage" src="698869 (1).png" alt="Ulster Motors Logo">
+    </a>
+
     <footer>
-        <p> © 2025 Ulster Motors | All rights reserved</p>
+        <p>© 2025 Ulster Motors | All rights reserved</p>
     </footer>
-    <script src="project.js"></script>
 </body>
 </html>
