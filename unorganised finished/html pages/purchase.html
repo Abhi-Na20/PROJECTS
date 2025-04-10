@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rental/Purchase Form</title>
+    <link rel="stylesheet" href="static/css/rent.css">
+    <link rel="icon" type="image/x-icon" href="static/image/698869 (1).png">
+</head>
+<body>
+    <div class="container">
+        <form id="rentalForm">
+             <label for="Title">Title</label> <select name="Title" id="Title">
+                <option value="Mr">Mr</option> <option value="Mrs">Mrs</option>
+                <option value="Ms">Ms</option>
+                <option value="Master">Master</option>
+            </select>
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required> <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required> 
+            <label for="age">Date of Birth</label> <input type="date" id="age" name="Age" placeholder="Your Age " required> <br><br>
+
+            <label for="mail">Email</label>
+            <input type="text" id="mail" name="Email" placeholder="Your Email.." required>
+            
+
+            <label>Card Type</label> <div class="btn-group">
+                <button type="button" id="mastercard" class=""> 
+                    <img src="static/image/mastercard.png" alt="Mastercard Logo" class="card-logo">
+                </button>
+                <button type="button" id="visa" class="">
+                    <img src="static/image/Visa_Logo.png" alt="Visa Logo" class="card-logo">
+                </button>
+                 <input type="hidden" id="cardType" name="cardType" value="">
+            </div>
+            <br><br>
+
+             <label for="Address">Billing Address 1</label>
+             <input type="text" id="Address" name="Address" placeholder="Your Billing Address " required> <br>
+
+             <label for="Address2">Billing Address 2</label> <input type="text" id="Address2" name="Address2" placeholder="Your Billing Address "> <br>
+
+             <label for="Postcode">Postcode</label> <input type="text" id="Postcode" name="Postcode" placeholder="Your Postcode " required> <br>
+
+             <label for="Country">Billing Country</label> <input type="text" id="Country" name="Country" placeholder="Your Billing Country " required> <br>
+
+             <label for="CardNumber">Card Number</label> <input type="text" id="CardNumber" name="CardNumber" placeholder="Your Card Number " inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" required> <br>
+
+
+             <label for="DateMonth">Expiry Date</label> <div class="date-group">
+                <select name="ExpiryMonth" id="DateMonth" required> <option value="">MM</option> <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select name="ExpiryYear" id="DateYear" required> <option value="">YYYY</option> <option value="2025">2025</option>
+                     <option value="2026">2026</option>
+                     <option value="2027">2027</option>
+                     <option value="2028">2028</option>
+                     <option value="2029">2029</option>
+                     <option value="2030">2030</option>
+                     <option value="2031">2031</option>
+                     <option value="2032">2032</option>
+                     <option value="2033">2033</option>
+                     <option value="2034">2034</option>
+                     <option value="2035">2035</option>
+                </select>
+            </div>
+
+             <label for="CVV">CVV</label>
+             <input type="text" id="CVV" name="CVV" minlength="3" maxlength="4" placeholder="Your CVV " inputmode="numeric" pattern="[0-9]{3,4}" required> <br><br><br>
+
+            <div class="button-wrapper">
+                 <input type="button" onclick="validateForm()" value="Submit" class="submit-button">
+                <a href="index.html" class="go-back-button">Go Back</a>
+            </div>
+
+
+        </form>
+    </div>
+    <script src="static/js/rent.js"></script>
+</body>
+</html>

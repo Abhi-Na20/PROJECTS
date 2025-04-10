@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Out</title>
+    <link rel="stylesheet" href="style.css">
+    <script src ="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="static/image/698869 (1).png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="static/css/project.css">  Ulster motors</a>
+        </div>
+        <a href="#" class="cta-button">Car Rental</a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="#">Sedans</a>
+                        <ul class="sub-dropdown">
+                            <li><a href="electric-sedans.html" target="contentFrame">Electric</a></li>
+                            <li><a href="Hybrid-sedans.html">Hybrid</a></li>
+                            <li><a href="Petrol-sedans.html">Petrol</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">SUVs</a>
+                        <ul class="sub-dropdown">
+                            <li><a href="electric-suvs.html">Electric</a></li>
+                            <li><a href="Hybrid-suvs.html">Hybrid</a></li>
+                            <li><a href="Petrol-suvs.html">Petrol</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Trucks</a>
+                        <ul class="sub-dropdown">
+                            <li><a href="electric-trucks.html">Electric</a></li>
+                            <li><a href="Hybrid-trucks.html">Hybrid</a></li>
+                            <li><a href="Petrol-trucks.html">Petrol</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Sports Cars</a>
+                        <ul class="sub-dropdown">
+                            <li><a href="electric-Sports.html">Electric</a></li>
+                            <li><a href="Hybrid-Sports.html">Hybrid</a></li>
+                            <li><a href="Petrol-Sports.html">Petrol</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="cta-button">Car Purchase</a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="#">New Cars</a>
+                        <ul class="sub-dropdown">
+                            <li><a href="#">Electric</a></li>
+                            <li><a href="#">Hybrid</a></li>
+                            <li><a href="#">Petrol</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Used Cars</a>
+                        <ul class="sub-dropdown">
+                            <li><a href="#">Electric</a></li>
+                            <li><a href="#">Hybrid</a></li>
+                            <li><a href="#">Petrol</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Luxury Cars</a>
+                        <ul class="sub-dropdown">
+                            <li><a href="#">Electric</a></li>
+                            <li><a href="#">Hybrid</a></li>
+                            <li><a href="#">Petrol</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="SignUp.html" class="cta-button">Sign Up</a></li>
+    </header>
+
+    <main>
+        <h1>You've been signed out!</h1>
+        <p>Your account information is still saved. You can log back in anytime.</p>
+        <p>You will be redirected to the home page in a few seconds...</p>
+    </main>
+
+    <script>
+        localStorage.setItem('loggedIn', 'false'); // Add this line
+
+        // Update the sign-in button
+        function updateSignInButton() {
+            const signInButton = document.getElementById('signInButton');
+            if (signInButton) {
+                signInButton.textContent = 'Sign In';
+                signInButton.href = 'signup2.html';
+            }
+        }
+
+        // Call the function to update the button
+        updateSignInButton();
+
+        // Redirect after a delay
+        setTimeout(function() {
+            window.location.href = "index.html";
+        }, 3000); // Redirect after 3 seconds
+    </script>
+    <script src="auth.js"></script>
+</body>
+</html>
