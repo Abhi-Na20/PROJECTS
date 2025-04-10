@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+		<script type="text/javascript" language="javascript">
+			var price;
+			var D.O.P;
+			var brand;
+			var MakeandModel;
+			
+		</script>
+
+</head>
+</html>
