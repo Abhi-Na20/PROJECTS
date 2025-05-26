@@ -1,0 +1,20 @@
+public class dogs extends pets {
+    private String breed;
+    public dogs(String name, int age, String color, int weight, String breed,int id) {
+        super(name, age, color, weight,id);
+        this.breed = breed;
+    }
+
+    public String Speak() {
+        return "Woof! I am"+ " " + getName() +" "+ "my id is "+ getId()+", i am  "+ getAge() +" "+ "years old"+ " " +"and my breed is" +" "+ breed;
+
+    }
+    public String getBreed() {
+        return breed;
+    }
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+
+
+}

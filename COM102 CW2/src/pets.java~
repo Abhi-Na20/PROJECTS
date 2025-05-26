@@ -1,0 +1,67 @@
+public class pets {
+    private String name;
+    private int age;
+    private String  color;
+    private int weight;
+    private int id;
+
+
+    public pets(String name, int age, String color, int weight,int id) {
+        this.name = name;
+        this.age = age;
+        this.color = color;
+        this.weight = weight;
+        this.id=id;
+    }
+
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public String Speak() {
+        return "i am pet";
+    }
+
+
+
+}
+
