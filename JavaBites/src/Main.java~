@@ -1,0 +1,58 @@
+import java.util.Map;
+import java.util.HashMap;
+import java.util.Scanner;
+import java.util.InputMismatchException;
+import java.util.List;
+import java.util.ArrayList;
+
+private static  CreateNewAccount {
+    public CreateNewAccount() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your Firstname: ");
+        String firstname = scanner.nextLine();
+        System.out.print("Enter your LastName: ");
+        String lastname = scanner.nextLine();
+        System.out.print("Enter your PhoneNumber: ");
+        String number = scanner.nextLine();
+        System.out.print("Enter your Email: ");
+        String email = scanner.nextLine();
+        System.out.print("Enter your Address: ");
+        String address = scanner.nextLine();
+        System.out.println("Account created successfully!");
+        System.out.println("Name: " + firstname + " " + lastname);
+        System.out.println("PhoneNumber: " + number );
+        System.out.println("Email: " + email);
+        System.out.println("Address: " + address);
+
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        while (true) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("------Welcome to JavaBites------");
+            System.out.println("1. Create New Account with javaBites");
+            System.out.println("2. Login to JavaBites");
+            System.out.println("3. Exit");
+            System.out.print("Enter your choice: ");
+            try {
+                int choice = scanner.nextInt();
+                switch (choice) {
+                    case 1:
+                        new CreateNewAccount();
+                        break;
+                    case 2:
+                        new Login();
+                        break;
+                    case 3:
+                        System.exit(0);
+                        break;
+                    default:
+                        System.out.println("Invalid choice!");
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid input!");
+            }
+        }
+    }
+}
